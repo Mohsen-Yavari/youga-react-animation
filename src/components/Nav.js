@@ -1,8 +1,25 @@
-import React from 'react'
+import React from 'react';
+//data
+import {navbar} from '../data';
+import { navigation } from './../data';
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <nav className="ml-[70px]">
+      <ul className="flex gap-x-[42px]">
+      {
+        navigation.map((item,index)=>{
+          return(
+            <li key={index}>
+              <a href={item.url}>
+                {item.name}
+              </a>
+            </li>
+          )
+        })
+      }
+      </ul>
+    </nav>
   )
 }
 

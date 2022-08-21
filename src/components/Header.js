@@ -32,11 +32,15 @@ const Header = () => {
             <div className="flex gap-x-4 lg:gap-x-9">
                 <button className="text-heading font-medium
                 text-sm lg:text-base hover:text-orange 
-                transation ">bt1</button>
+                transation ">
+                    Sign In
+                </button>
                 <button className="btn btn-md lg:px-[30px] 
                 bg-orange-100 border border-orange 
                 text-orange font medum text-sm lg:text-base 
-                hover:bg-orange-200 hover:text-white transition ">bt2</button>
+                hover:bg-orange-200 hover:text-white transition ">
+                    Sign up
+                </button>
             </div>
             {/* nav mobile */}
             <NavMobile />
