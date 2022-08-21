@@ -17,8 +17,9 @@ const Hero = () => {
     <div className="container mx-auto">
         {/* header */}
         <Header />
-        <div>
-            <div>
+        <div className="flex flex-col items-center 
+        lg:flex-row lg:items-start pt-32">
+            <div className="flex-1 lg:mt-12">
                 <h1 className="h1 mb-3 lg:mb-[22px]">
                 Yoga to <br /> Release Stress
                 </h1>
@@ -37,16 +38,19 @@ const Hero = () => {
                 </div>
             </div>
             {/* img */}
-            <Parallax
-                  className='w-full h-full p-28 lg:p-16'
-                  bgImage={Image}
-                  bgImageAlt='guy'
-                  strength={200}
-                ></Parallax>
-            <div>
-                <div>
-                    <div>
-
+           
+            <div className="w-full bg-circle bg-cover 
+            lg:bg-none lg:w-auto ">
+                <div className=" flex-1 flex justify-center
+                lg:justify-end">
+                    <div className="w-[234-px] h-[234px] lg:w-[504px]
+                    lg:h-[744px] lg:mt-0">
+                    <Parallax
+                    className='w-full h-full p-28 lg:p-16'
+                    bgImage={Image}
+                    bgImageAlt='guy'
+                    strength={200}
+                    ></Parallax>
                     </div>
                 </div>
             </div>
