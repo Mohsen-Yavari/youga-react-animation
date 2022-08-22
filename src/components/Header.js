@@ -11,6 +11,13 @@ const Header = () => {
     const [header,setHeader] = useState(false);
 
 
+    useEffect(() => {
+        window.addEventListener('scroll',()=>{
+            window.scrollY > 36 ? setHeader(true) : setHeader(false);
+        })
+    },[])
+
+
   return (
     <header className={`${header ? "top-0" : "top-9"} fixed
     bg-white w-full max-w-[90vw] lg:max-w-[1170px] mx-auto 
