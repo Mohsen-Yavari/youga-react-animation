@@ -6,6 +6,7 @@ import Courses from './components/Courses';
 import Pricing from './components/Pricing';
 import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Pricing />
       <Newsletter />
       <Contact />
-      <div className="h-[200px]"></div>
+      <Footer />
+     
     </div>
   );
 }
