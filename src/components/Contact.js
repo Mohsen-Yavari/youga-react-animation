@@ -8,10 +8,17 @@ const Contact = () => {
         <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row 
             lg:gap-x-[74px] bg-contact bg-no-repeat 
-            bg-cover min-h-[600px]">
+            bg-cover min-h-[600px]"
+            data-aos='zoom'
+            data-aos-offset='400'
+            >
                 {/* text */}
                 <div className="flex-1 flex flex-col justify-center
-                pl-8">
+                pl-8"
+                data-aos='fade-down'
+                data-aos-delay='300'
+                data-aos-offset='500'
+                >
                     <h2 className="h2 mb-3 lg:mb-7 ">
                     Get in Touch With Us for Yoga Course.
 
@@ -25,8 +32,12 @@ const Contact = () => {
                 <form className="flex-1 shadow-primary
                 rounded-[20px] p-5 lg:p-10 flex flex-col
                 gap-y-5 max-h-[600px] lg:mt-20
-                ">
-                         <input
+                "
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-offset='500'
+                >
+              <input
               className='form-control'
               placeholder='First name'
               type='text'
